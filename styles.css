@@ -1,0 +1,27 @@
+*{box-sizing:border-box;}
+*{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+#container{ display: grid;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;}
+
+header{grid-area: header; background-color: #120323; text-align: center; padding:1rem;}
+header h1{color: #97bf04;text-align: center}
+main{background-color: white; color: #120323}
+/*figure{background-color: #d9043d;padding: 1rem;}saving this line if i cant figure out frame*/
+figure{border: 1px;border-color: #d9043d;}
+figure h2{color: #120323;text-align: left;}
+figcaption{text-align: left;}
+aside{background-color: #97bf04; color: #120323; text-align: left;}
+footer{background-color: #d9043d; color: white;text-align: center;}
+
+@media screen and (max-width:768px) { #container{
+        grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    grid-template-columns:1fr;
+    grid-template-rows: auto 1fr auto auto;}}
