@@ -5,12 +5,17 @@
 * h3{color: #120323; text-align: left;}
 
 #header-container{display:flex;flex-direction: column;align-items: center;}
-header{background-color: #120323; padding: 1rem; display: flex;}
+header{background-color: #120323; padding: 1rem; display:flex;}
 header img{width:100px; height:auto;}
+
 #container{display: flex; flex-direction: column; align-items: center;}
 main{ background-color: white; color: #120323;}
 figure{color: #120323;}
-figure img{border:3px #d9043d solid;width: 100%;height: auto;}
+figure img{border:3px #d9043d solid; width: 100%; height: auto;}
+figcaption{text-align: left; color: #120323;}
+aside{background-color: #97bf04; width: 100%; padding: 1rem;}
+
+footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem;}
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
