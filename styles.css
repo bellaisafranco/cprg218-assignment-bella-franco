@@ -9,7 +9,8 @@ header{background-color: #120323; padding: 1rem; display: flex;}
 header img{width:100px; height:auto;}
 #container{display: flex; flex-direction: column; align-items: center;}
 main{ background-color: white; color: #120323;}
-
+figure{color: #120323;}
+figure img{border:3px #d9043d solid;width: 100%;height: auto;}
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
@@ -23,7 +24,7 @@ header{ background-color: #120323; text-align: center; padding:1rem;flex: 1;}
 header img{width:100px; height: auto;}
 #container{display: flex;flex-direction: column;align-items: center;}
 main{ background-color: white; color: #120323;flex: 2;}
-figure {color: #120323;display: flex;}
+figure {color: #120323;}
 
 figure figcaption{text-align: left;}
 figure img{border: 3px #d9043d solid;width: 100%; height: auto;}
