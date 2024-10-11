@@ -11,10 +11,11 @@
 header{
     background-color: #120323; 
     text-align: center; 
-    padding: 1rem; 
+    padding: 2rem; 
     display:flex; 
     align-items: center;}
 header img{
+    align-items: center;
     width:100px; 
     height:auto;}
 
@@ -46,7 +47,7 @@ footer{
     color: white; 
     text-align: center; 
     width: 100%; 
-    padding: 1rem; 
+    padding: 2rem; 
     margin-bottom: 1rem;}
 
 /*okay i think the top is good, time to cry and do media*/
@@ -76,13 +77,20 @@ footer{
 /*okay tiny screen is working */
 
 @media screen and (max-width:1000px) {
-    header{
+    #header-container{  
         display: flex; 
         flex-direction: row; 
+        justify-content: space-around;
+        align-items: center;}
+    header{
+        display: flex;
+        flex-direction: row; 
         align-items: center;
-        justify-content: space-around;}
+        justify-content: space-around;
+        padding: 1rem;}
     header img{ 
-        display: flex; 
+        display: flex;
+        flex-direction: row; 
         align-items: center;}
     figure{
         display: flex;}
@@ -96,6 +104,43 @@ footer{
         flex-direction: column; 
         padding-left: 1rem;}}
 
+        /*big screen time */
+
+ @media screen and (min-width:1000px) {
+    #container{  
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+        align-items: center;}
+
+   /* header{
+        display: flex; 
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-around;}
+    header img{ 
+        display: flex; 
+        align-items: center;}*/
+        /* ^^^dont need bc its defined in max1000*/
+    main{
+        flex: 3;}
+    figure{
+        display: flex;
+        flex: 2;
+        align-items: flex-start;}
+    figure img{
+      /*  display: flex;
+        flex-direction: column;*/
+        width: 300px;
+        height: auto;}
+    figcaption{
+        display: flex;
+        flex-direction: column;}
+    aside{display: flex;
+        flex: 1;
+        flex-direction: column;}
+    
+ }
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
