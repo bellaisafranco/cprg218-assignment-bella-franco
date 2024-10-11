@@ -1,100 +1,68 @@
+*{box-sizing: border-box;}
+*{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#header-container{display:flex;}
+
+
+
+/* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 * h1{color: #97bf04; text-align: center;}
 * h2{color: #120323;text-align: left;}
 * h3{color: #120323; text-align: left;}
 
-.header{ background-color: #120323; text-align: center; padding:1rem;}
+header{ background-color: #120323; text-align: center; padding:1rem;flex: 1;}
 #header-container{ display: flex; flex-direction: row;}
-/*header h1{color: #97bf04;text-align: center}*/
-#container{display: flex;flex-direction: column;}
-.main{ background-color: white; color: #120323;}
-.figure {color: #120323;text-align: left;flex-direction: column;}
+header img{width:100px; height: auto;}
+#container{display: flex;flex-direction: column;align-items: center;}
+main{ background-color: white; color: #120323;flex: 2;}
+figure {color: #120323;display: flex;}
 
-.figure figcaption{text-align: left;}
-.figure img{border: 3px #d9043d solid;}
-.aside{ background-color: #97bf04; color: #120323; text-align: left; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;}
-.footer{ background-color: #d9043d; color: white;text-align: center;padding: 1rem;}
+figure figcaption{text-align: left;}
+figure img{border: 3px #d9043d solid;width: 100%; height: auto;}
+aside{ background-color: #97bf04; color: #120323; text-align: left; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;flex: 1;}
+footer{ background-color: #d9043d; color: white;text-align: center;padding: 1rem;flex: 1;}
+*/
 
-
-
-@media screen and (max-width:768px) {
-    #headercontainer
-    header{flex-direction: column; justify-content: space-between;}
-  
-    #container
-    main{flex-direction: column; justify-content: space-between;}}
-
+/*MEDIUM SCREEN*//*
 @media screen and (max-width:1000px) {
     #headercontainer
-    header{flex-direction:column; justify-content: space-between;}
+    header{flex-direction:column;}
   
     #container
-    main{flex-direction: column;}
-    figure{flex-direction: row; justify-content: space-between;}
-    figure img{flex:50%}
-    figure caption{flex: 50%;}
-    aside{flex-direction: row;}}
+    main{display:flex;flex-direction: row;justify-content: flex-start;flex: 2;}
+    figure{display: flex;align-items: center;flex: 100%;}
+    figure img{width: 300px;height: auto; flex-direction: column;}
+    figure figcaption{flex-direction: column;}
+    aside{width: 100%;flex: 100%;}
 
+  }
 
+/*THE BIG SCREEN*//*
  @media screen and (min-width:1000px) {
     #headercontainer
     header{flex-direction: column; justify-content: space-between;}
   
     #container
-    main{flex-direction: column;}
-    figure{flex-direction: column; justify-content: space-between;}
-    aside{flex-direction: column; }}
+    main{display:flex;flex-direction: row;justify-content: flex-start;flex: 3;}
+    figure{display: flex;align-items: center;flex:2;}
+    figure img{width: 300px;height: auto;display: flex; flex-direction: column;}
+    figure figcaption{flex-direction: column;}
+    aside{width: 100%;flex-direction: column;flex: 1;}}
+
+
+    /*TINY SCREEN*//*
+  @media screen and (max-width:768px) {
+    #headercontainer
+    header{flex-direction: column; justify-content: space-between;}
   
+    #container
+    main{display:flex;flex-direction: column;flex: 1;}
+    figure{align-items: center;}
+    figure img{width: 100%;height: auto; flex-direction: column;}
+    figure figcaption{flex-direction: column;}
+    aside{width: 100%;}}
  
 
 
-
-
-        /* JUSTTTTT READ THE ASSIGNMENT ITS SUPPOSED TO BE FLEXBOX AND I DID GRID MY BAD IMMA RESTART hahaha
-#container{ display: grid;
-    grid-template-areas: "header header" "main aside" "footer footer";
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;}
-
-header{grid-area: header; background-color: #120323; text-align: center; padding:1rem;}
-header h1{color: #97bf04;text-align: center}
-main{grid-area: main;background-color: white; color: #120323;}
-/*figure{background-color: #d9043d;padding: 1rem;}saving this line if i cant figure out frame*/
-/*okayframe is working lets go*/ /*
-figure{ grid-area: main; img{border: 3px #d9043d solid;}}
-figure .h2{color: #120323;text-align: left;}
-figure .figcaption{text-align: left; float: left;}
-aside{ grid-area: aside; background-color: #97bf04; color: #120323; text-align: left; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;}
-footer{grid-area: footer; background-color: #d9043d; color: white;text-align: center;padding: 1rem;}
-
-@media screen and (max-width:1000px) 
-{ #container{
-        grid-template-areas: 
-        "header"
-        "main"
-        "aside"
-        "footer";
-    grid-template-columns:1fr;
-    grid-template-rows: auto 1fr auto auto;}}
-
-@media screen and (max-width:768px) 
-{ #container{
-        grid-template-areas: 
-        "header"
-        "main"
-        "aside" 
-        "footer";
-    grid-template-columns:1fr;
-    grid-template-rows: auto 1fr auto auto;} }
-
-    @media screen and (min-width:1000px) 
-    { #container{
-            grid-template-areas: 
-            "header"
-            "main"
-            "aside" 
-            "footer";
-        grid-template-columns:1fr;
-        grid-template-rows: auto 1fr auto auto;}}*/
+*/
