@@ -54,11 +54,22 @@ footer{
 /*okay i think the top is good, time to cry and do media*/
 
 @media screen and (max-width:768px) {
-    header{
+    #header-container{  
         display:flex; 
         flex-direction: column; 
         padding: 2rem; 
+        align-content: center;}
+    header{
+       /* display:flex; 
+        flex-direction: column; */
+        padding: 2rem; 
         align-content: center;}  
+    header img{
+           /* display:flex; 
+            flex-direction: column; */
+            padding: 2rem; 
+            align-content: center;}  
+
     #container{
         display: flex; 
         flex-direction: column;}
