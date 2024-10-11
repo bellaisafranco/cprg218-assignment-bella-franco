@@ -13,10 +13,11 @@ header{
     text-align: center; 
     padding: 2rem; 
     display:flex; 
-    align-items: center;}
+    align-items: center;
+    justify-content: center;}
 header img{
     align-items: center;
-    width:100px; 
+    width:150px; 
     height:auto;}
 
 #container{
@@ -56,23 +57,23 @@ footer{
     header{
         display:flex; 
         flex-direction: column; 
-        padding: 1rem; 
-        width: 100%;}
-    header img{
-        width:100px; 
-        height:auto; 
-        align-items: center; 
-        display:flex; 
-        flex-direction: column;}
+        padding: 2rem; 
+        align-content: center;}  
     #container{
         display: flex; 
         flex-direction: column;}
     figure{
         display: flex; 
-        flex-direction: column;}
+        flex-direction: column;
+        align-items: center;
+        align-content: center;}
     figure img{
-        width: 100%; 
-        height: auto;}}
+        min-width: 100%;
+        height: auto;}
+ 
+    figcaption{
+            display: flex;
+            flex-direction: column; } }
 
 /*okay tiny screen is working */
 
@@ -87,7 +88,7 @@ footer{
         flex-direction: row; 
         align-items: center;
         justify-content: space-around;
-        padding: 1rem;}
+        padding: 2rem;}
     header img{ 
         display: flex;
         flex-direction: row; 
@@ -135,8 +136,10 @@ footer{
         height: auto;}
     figcaption{
         display: flex;
-        flex-direction: column;}
-    aside{display: flex;
+        flex-direction: column;
+        padding-left: 1rem;}
+    aside{
+        display: flex;
         flex: 1;
         flex-direction: column;}
     
