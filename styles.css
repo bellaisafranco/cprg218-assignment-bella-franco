@@ -13,9 +13,9 @@ main{ background-color: white; color: #120323;}
 figure{color: #120323;}
 figure img{border:3px #d9043d solid; width: 100%; height: auto;}
 figcaption{text-align: left; color: #120323;}
-aside{background-color: #97bf04; width: 100%; padding: 1rem;}
+aside{background-color: #97bf04; width: 100%; padding: 1rem;margin-top: 1rem;margin-bottom: 1rem;}
 
-footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem;}
+footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem;margin-bottom: 1rem;}
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
