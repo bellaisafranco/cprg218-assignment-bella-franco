@@ -5,7 +5,7 @@
 * h3{color: #120323; text-align: left;}
 
 #header-container{display:flex;flex-direction: column;align-items: center;}
-header{background-color: #120323; padding: 1rem; display:flex;}
+header{background-color: #120323; text-align: center; padding: 1rem; display:flex;}
 header img{width:100px; height:auto;}
 
 #container{display: flex; flex-direction: column; align-items: center;}
@@ -13,10 +13,16 @@ main{ background-color: white; color: #120323;}
 figure{color: #120323;}
 figure img{border:3px #d9043d solid; width: 100%; height: auto;}
 figcaption{text-align: left; color: #120323;}
-aside{background-color: #97bf04; width: 100%; padding: 1rem;margin-top: 1rem;margin-bottom: 1rem;}
+aside{background-color: #97bf04; width: 100%; padding: 1rem;margin-top: 1rem; margin-bottom: 1rem;}
 
-footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem;margin-bottom: 1rem;}
+footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem; margin-bottom: 1rem;}
 
+/*okay i think the top is good, time to cry and do media*/
+
+@media screen and (max-width:768px) {
+    header{display:flex; flex-direction: column;}
+    #container{display: flex; flex-direction: column;}
+    figure{display: flex; flex-direction: column;}}
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
