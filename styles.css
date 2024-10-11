@@ -4,34 +4,67 @@
 * h2{color: #120323;text-align: left;}
 * h3{color: #120323; text-align: left;}
 
-#header-container{display:flex;flex-direction: column;align-items: center;}
-header{background-color: #120323; text-align: center; padding: 1rem; display:flex; align-items: center;}
-header img{width:100px; height:auto;}
+#header-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;}
+header{
+    background-color: #120323; 
+    text-align: center; 
+    padding: 1rem; 
+    display:flex; 
+    align-items: center;}
+header img{
+    width:100px; 
+    height:auto;}
 
-#container{display: flex; flex-direction: column; align-items: center;}
-main{ background-color: white; color: #120323;}
-figure{color: #120323;}
-figure img{border:3px #d9043d solid; width: 100%; height: auto;}
-figcaption{text-align: left; color: #120323;}
-aside{background-color: #97bf04; width: 100%; padding: 1rem;margin-top: 1rem; margin-bottom: 1rem;}
+#container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;}
+main{ 
+    background-color: white; 
+    color: #120323;}
+figure{
+    color: #120323;}
+figure img{
+    border:3px #d9043d solid; 
+    width: 100%; 
+    height: auto;}
+figcaption{
+    text-align: left; 
+    color: #120323;}
+aside{
+    background-color: #97bf04; 
+    width: 100%; 
+    padding: 1rem;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;}
 
-footer{background-color: #d9043d; color: white; text-align: center; width: 100%; padding: 1rem; margin-bottom: 1rem;}
+footer{
+    background-color: #d9043d;
+    color: white; 
+    text-align: center; 
+    width: 100%; 
+    padding: 1rem; 
+    margin-bottom: 1rem;}
 
 /*okay i think the top is good, time to cry and do media*/
 
 @media screen and (max-width:768px) {
-    header{display:flex; flex-direction: column;}
-    header img{display: flex;}
+    header{display:flex; flex-direction: column; padding: 1rem; width: 100%;}
+    header img{width:100px; height:auto; align-items: center; display:flex; flex-direction: column;}
     #container{display: flex; flex-direction: column;}
-    figure{display: flex; flex-direction: column;}}
+    figure{display: flex; flex-direction: column;}
+    figure img{width: 100%; height: auto;}}
 
 /*okay tiny screen is working */
 @media screen and (max-width:1000px) {
-    header{display: flex; flex-direction: row;}
-    header img{ display: flex;}
+    header{display: flex; flex-direction: row; align-items: center;justify-content: space-around;}
+    header img{ display: flex; align-items: center;}
     figure{display: flex;}
     figure img{display: flex; flex-direction: column; width: 300px; height: auto;}
-    figcaption{display: flex; flex-direction: column;}
+    figcaption{display: flex; flex-direction: column; padding-left: 1rem;}
 }
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
