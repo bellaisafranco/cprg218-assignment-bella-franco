@@ -52,20 +52,49 @@ footer{
 /*okay i think the top is good, time to cry and do media*/
 
 @media screen and (max-width:768px) {
-    header{display:flex; flex-direction: column; padding: 1rem; width: 100%;}
-    header img{width:100px; height:auto; align-items: center; display:flex; flex-direction: column;}
-    #container{display: flex; flex-direction: column;}
-    figure{display: flex; flex-direction: column;}
-    figure img{width: 100%; height: auto;}}
+    header{
+        display:flex; 
+        flex-direction: column; 
+        padding: 1rem; 
+        width: 100%;}
+    header img{
+        width:100px; 
+        height:auto; 
+        align-items: center; 
+        display:flex; 
+        flex-direction: column;}
+    #container{
+        display: flex; 
+        flex-direction: column;}
+    figure{
+        display: flex; 
+        flex-direction: column;}
+    figure img{
+        width: 100%; 
+        height: auto;}}
 
 /*okay tiny screen is working */
+
 @media screen and (max-width:1000px) {
-    header{display: flex; flex-direction: row; align-items: center;justify-content: space-around;}
-    header img{ display: flex; align-items: center;}
-    figure{display: flex;}
-    figure img{display: flex; flex-direction: column; width: 300px; height: auto;}
-    figcaption{display: flex; flex-direction: column; padding-left: 1rem;}
-}
+    header{
+        display: flex; 
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-around;}
+    header img{ 
+        display: flex; 
+        align-items: center;}
+    figure{
+        display: flex;}
+    figure img{
+        display: flex; 
+        flex-direction: column; 
+        width: 300px; 
+        height: auto;}
+    figcaption{
+        display: flex; 
+        flex-direction: column; 
+        padding-left: 1rem;}}
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
 *{box-sizing:border-box;}
