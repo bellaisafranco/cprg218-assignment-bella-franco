@@ -4,11 +4,11 @@
 * h2{color: #120323;text-align: left;}
 * h3{color: #120323; text-align: left;}
 
-#header-container{display:flex;flex-direction: column;}
+#header-container{display:flex;flex-direction: column;align-items: center;}
 header{background-color: #120323; padding: 1rem; display: flex;}
 header img{width:100px; height:auto;}
-
-
+#container{display: flex; flex-direction: column; align-items: center;}
+main{ background-color: white; color: #120323;}
 
 
 /* This code does not work i need to rewrite aiuyegfpiugfpiu
